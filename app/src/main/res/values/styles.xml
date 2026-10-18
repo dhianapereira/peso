@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="Theme.Peso" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Peso.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#0B6B5B</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Peso</item>
+    </style>
+</resources>
