@@ -35,7 +35,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -56,14 +56,14 @@ fun PesoApp(viewModel: MainViewModel) {
     var editing by remember { mutableStateOf<WeightEntryEntity?>(null) }
     var showEditor by rememberSaveable { mutableStateOf(false) }
     val snackbars = remember { SnackbarHostState() }
-    val context = LocalContext.current
+    val resources = LocalResources.current
 
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             val message = when (event) {
-                AppEvent.Saved -> context.getString(R.string.saved)
-                AppEvent.Deleted -> context.getString(R.string.deleted)
-                is AppEvent.Backup -> context.getString(
+                AppEvent.Saved -> resources.getString(R.string.saved)
+                AppEvent.Deleted -> resources.getString(R.string.deleted)
+                is AppEvent.Backup -> resources.getString(
                     if (!event.success) {
                         R.string.backup_error
                     } else if (event.importing) {
