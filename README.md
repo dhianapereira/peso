@@ -107,6 +107,7 @@ As traduções ficam em `app/src/main/res/values/` e `app/src/main/res/values-en
 As releases incluem o APK para instalação em dispositivos Android.
 
 - [Baixar a versão mais recente](https://github.com/dhianapereira/peso/releases/latest)
+- [Processo de release e configuração da assinatura](./docs/RELEASE.md)
 
 ## Licença
 
