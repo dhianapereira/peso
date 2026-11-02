@@ -6,6 +6,15 @@ O Peso reúne histórico, variação desde o primeiro registro, gráfico de evol
 
 [Baixar a versão mais recente](https://github.com/dhianapereira/peso/releases/latest)
 
+## O app por dentro
+
+<p align="center">
+  <img src="./assets/peso-app-01.jpg" alt="Visão geral do Peso com peso atual, evolução desde o primeiro registro, meta e gráfico mensal" width="23%">
+  <img src="./assets/peso-app-02.jpg" alt="Gráfico de evolução mensal do peso e indicação da distância até a meta" width="23%">
+  <img src="./assets/peso-app-03.jpg" alt="Histórico do Peso com registros, datas e variações entre as pesagens" width="23%">
+  <img src="./assets/peso-app-04.jpg" alt="Configurações do Peso com preferências, backup, documentos legais e informações do app" width="23%">
+</p>
+
 ## Funcionalidades
 
 - Registro de peso com data escolhida pela pessoa.
